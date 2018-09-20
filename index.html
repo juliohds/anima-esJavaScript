@@ -17,37 +17,43 @@
         <div class="row">
             <div class="col-md-12" style="padding: 10px; background-color: black;">
                 <center>
-                    <h1 style="color: white; font-family: Anton, sans-serif; font-size: 70px; margin-top: 20px;">FCFS - First Come First Served</h1>
+                    <h1 style="color: white; font-family: Anton, sans-serif; font-size: 70px; margin-top: 20px;" id='txtAlgoritmo'></h1>
                 </center>
             </div>
         </div>
-        <div class="row" style="margin-top: 10%;">
-            <div class="col-md-6">
-                <div class="row">
-                    <img src="img/P1.png" alt="" id="p1">
+        <div class="row">
+            <div class="col-md-12" style="padding: 10px;">
+                
+                <div id="divInicio" style="background-color: rebeccapurple; float: left; width: 50%; height: 250px;"> 
+                
                 </div>
-                <div class="row">
-                    <img src="img/P2.png" alt="" id="p2">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <label for="" id="titleP3" style="margin-left: 80%; margin-top: 10%; position: absolute; color: white; font-family: Anton, sans-serif; font-size: 30px;"></label>
-                    <img src="img/processador.png" alt="" class="" style="margin-left: 60%; margin-top: -30px;" id="p3">
+
+                <div id="divFim" style="background-color: green; float: right; width: 50%; height: 250px;"> 
+
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12" style="margin-top: 5%;">
+                <center>
+                    <div id="divMeio" style="background-color: yellow; width: 40%; height: 200px;"> 
+
+                    </div>
+                </center>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-image: red;">
         <div class="col-md-12">
             <div class="row">
-        
+        <br>
             </div>
         </div>
     </div>
-    
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/axios/dist/axios.js"></script>
     <script src="js/index.js"></script>
 </body>
 
