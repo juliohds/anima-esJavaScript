@@ -13,30 +13,35 @@
 </head>
 
 <body background="">
+
+    <button class="btn btn-primary btn-home" type="button" id="btnStart" style="height: 90px; width: 80px;">Start</button>
+    <button class="btn btn-danger btn-home" type="button" id="" data-toggle="modal" data-target="#exampleModal"
+        style="height: 90px; width: 80px; margin-left: 85px;">Escolher</button>
+    <button class="btn btn-default btn-home" type="button" id="btnReset" style="height: 90px; width: 80px;  margin-left: 170px;">Reset</button>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12" style="padding: 10px; background-color: black;">
                 <center>
-                    <h1 style="color: white; font-family: Anton, sans-serif; font-size: 70px; margin-top: 20px;" id='txtAlgoritmo'></h1>
+                    <h1 style="color: white; font-family: Anton, sans-serif; font-size: 70px; margin-top: 20px;" id='txtAlgoritmo'>&nbsp</h1>
                 </center>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12" style="padding: 10px;">
-                
-                <div id="divInicio" style="background-color: rebeccapurple; float: left; width: 50%; height: 250px;"> 
-                
+            <div class="col-md-12" style="padding: 1px;">
+                <!-- https://image.freepik.com/vetores-gratis/fundo-de-raio-espiral-preto-e-branco_1164-1771.jpg -->
+                <div id="divInicio" style="background-color: gray; background-image: url(''); float: left; width: 50%; height: 250px;">
+
                 </div>
 
-                <div id="divFim" style="background-color: green; float: right; width: 50%; height: 250px;"> 
+                <div id="divFim" style="background-color: gray; background-image: url(''); float: right; width: 50%; height: 250px;">
 
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12" style="margin-top: 5%;">
+            <div class="col-md-12" style="margin-top: 1%;">
                 <center>
-                    <div id="divMeio" style="background-color: yellow; width: 40%; height: 200px;"> 
+                    <div id="divMeio" style="background-color: black; width: 100%; height: 230px;">
 
                     </div>
                 </center>
@@ -46,7 +51,40 @@
     <div class="container-fluid" style="background-image: red;">
         <div class="col-md-12">
             <div class="row">
-        <br>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Escolha o algoritmo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked value="1">FCFS - First Come First Served</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" value="2">SJF – Shortest Job First</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" value="3">Por Prioridade</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" value="4">Round-Robin</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="btnChose">Carregar</button>
+                </div>
             </div>
         </div>
     </div>

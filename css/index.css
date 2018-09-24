@@ -1,3 +1,28 @@
 body{
-    background-image: url('https://www.commercialintegrator.com/wp-content/uploads/2017/05/Code-image-1400x650.jpg')
+    background-image: url('')
+}
+
+.btn-home{
+    position: absolute;
+    bottom: 0px;
+}
+.img-processo{
+    position: absolute;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 90px;
+    margin-left: 12px;
+}
+
+.img-cpu{
+    position: absolute;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5px;
+    padding: 5px;
+    width: 250PX;
+    margin-top: 14%;
+    margin-left: 30px;
 }
