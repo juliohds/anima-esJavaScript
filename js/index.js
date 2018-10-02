@@ -241,15 +241,13 @@ function process2B(){
 }
 function process2C(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html("CONTINUA")
-  voltas2 -= 1;
-  $("#processoIdTitle2").html(voltas2)
+  $("#processoIdTitle2").html("1")  
   $("#divP2").animate({left: "+=270", top: "-=260"}, velocidade, process2D);
 }
 
 function process2D(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html("CONTINUA")
-  $("#processoIdTitle2").html("1")
-  $("#divP2").animate({left: "0", top: "0"}, velocidade, process3);
+  $("#divP2").animate({left: "400", top: "120"}, velocidade, process3);
 }
 
 function process3(){
@@ -259,19 +257,17 @@ function process3(){
 
 function process3B(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_p)
-  $("#processoIdTitle3").css("background-color", "green")
+  $("#processoIdTitle3").html('1')
   $("#divP3").animate({left: "+=250"}, velocidade, process3C);
 }
 function process3C(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
-  $("#processoIdTitle2").html('2')
   $("#divP3").animate({left: "+=420", top: "-=290"}, velocidade, process3D);
 }
 
 function process3D(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html("CONTINUA")
-  $("#processoIdTitle3").html("1")
-  $("#divP3").animate({left: "0", top: "0"}, velocidade, process4);
+  $("#divP3").animate({left: "200", top: "150"}, velocidade, process4);
 }
 
 function process4(){
@@ -281,18 +277,17 @@ function process4(){
 
 function process4B(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_p)
-  $("#processoIdTitle4").css("background-color", "green")
+  $("#processoIdTitle4").html('2')
   $("#divP4").animate({left: "+=250"}, velocidade, process4C);
 }
 function process4C(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
-  $("#processoIdTitle2").html("2")
   $("#divP4").animate({left: "+=560", top: "-=290"}, velocidade, process4D);
 }
 
 function process4D(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html("CONTINUA")
-  $("#divP4").animate({left: "0", top: "0"}, velocidade, process5);
+  $("#divP4").animate({left: "10", top: "120"}, velocidade, process5);
 }
 
 function process5(){
@@ -306,12 +301,83 @@ function process5B(){
 }
 function process5C(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
-  $("#processoIdTitle5").css("background-color", "green")
-  $("#divP5").animate({left: "-=100", top: "-=290"}, velocidade);
+  $("#processoIdTitle5").html('3')
+  $("#divP5").animate({left: "-=100", top: "-=290"}, velocidade, process5D);
 }
 
-function process5C(){
+function process5D(){
   $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
   $("#processoIdTitle5").css("background-color", "green")
-  $("#divP5").animate({left: "-=100", top: "-=290"}, velocidade);
+  $("#divP5").animate({left: "600", top: "120"}, velocidade, process2E);
+}
+
+function process2E(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#processoIdTitle2").html('0')
+  $("#divP2").animate({left: "+=120", top: "+=275"}, velocidade, process2F);
+}
+
+function process2F(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#processoIdTitle2").html('0')
+  $("#divP2").animate({left: "+=320"}, velocidade, process2G);
+}
+
+function process2G(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#divP2").animate({left: "+=320", top: "-=310"}, velocidade, process3E);
+}
+
+function process3E(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#processoIdTitle3").html('0')
+  $("#divP3").animate({left: "+=120", top: "+=275"}, velocidade, process3F);
+}
+
+function process3F(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#processoIdTitle3").html('0')
+  $("#divP3").animate({left: "+=320"}, velocidade, process3G);
+}
+
+function process3G(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#divP3").animate({left: "+=720", top: "-=310"}, velocidade, process4E);
+}
+
+
+function process4E(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#processoIdTitle4").html('0')
+  $("#divP4").animate({left: "+=320", top: "+=190"}, velocidade, process4F);
+}
+
+function process4F(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#processoIdTitle4").html('0')
+  $("#divP4").animate({left: "+=320"}, velocidade, process4G);
+}
+
+function process4G(){
+  $("#processoIdTitle5").html('1')
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#divP4").animate({left: "+=120", top: "-=310"}, velocidade, process5E);
+}
+
+
+
+function process5E(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#divP5").animate({left: "+=120", top: "+=275"}, velocidade, process5F);
+}
+
+function process5F(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#processoIdTitle5").html('0')
+  $("#divP5").animate({left: "+=320"}, velocidade, process5G);
+}
+
+function process5G(){
+  $("#cpuIdTitle"+processadorAlgoritmo.id).html(status_f)
+  $("#divP5").animate({left: "+=320", top: "-=410"}, velocidade);
 }
